@@ -1,0 +1,75 @@
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #d1d1d1;
+    background-image: url('https://media.istockphoto.com/id/1138393877/photo/hand-turns-a-dice-and-changes-the-expression-done-to-done.jpg?s=612x612&w=0&k=20&c=x1035BCMKTbZjsyRyvrT88v0TjHM3Gm_nlzDsUgbd8s=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-form input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px
+}
+
+.todo-form button {
+    padding: 8px 12px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-form button:hover {
+    background-color: aqua;
+}
+
+.todo-item {
+
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.todo-item button {
+    margin-left: 10px;
+    color: solid black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-item button:hover {
+    background-color: lightblue;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .todo-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
